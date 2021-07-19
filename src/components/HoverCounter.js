@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import UpdatedComponent from './withCounter'; 
+import withCounter from './withCounter'; 
 
 
 function HoverCounter(props) {
@@ -12,4 +12,4 @@ function HoverCounter(props) {
     )
 }
 
-export default UpdatedComponent(HoverCounter)
+export default withCounter(HoverCounter)

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import UpdatedComponent from './withCounter'; 
+import withCounter from './withCounter'; 
 
 function ButtonCounter(props) {
     const {count, incrementCount} = props;
@@ -10,4 +10,4 @@ function ButtonCounter(props) {
     )
 }
 
-export default UpdatedComponent(ButtonCounter)
+export default withCounter(ButtonCounter)
